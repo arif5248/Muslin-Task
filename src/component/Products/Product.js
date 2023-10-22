@@ -18,7 +18,6 @@ function Products() {
       <h2 className="productsHeading">Products</h2>
       <div className="container">
         <div className="products">
-          {console.log(products)}
           {products &&
             products.map((product, index) => (
               <ProductCard key={product.id} product={product} />
