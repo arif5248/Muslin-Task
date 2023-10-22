@@ -1,0 +1,96 @@
+.productsHeading {
+  margin: 2vmax auto;
+  width: 15vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 2vmax;
+  color: rgba(0, 0, 0, 0.678);
+  font: 500 1.5vmax "Roboto";
+  text-align: center;
+}
+.mainBox {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5vmax 0.3vmax;
+  justify-content: center;
+  min-height: 30vh;
+}
+.productCard {
+  width: 18vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 1vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax;
+}
+.productCard > img {
+  width: 17vmax;
+}
+.productCard > div {
+  margin: 0vmax 0vmax 0vmax 0vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.productCard > div > span {
+  margin: 0.5vmax;
+  font: 300 0.7vmax "Roboto";
+}
+.productCard > p {
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+}
+.productCard > span {
+  margin: 0.5vmax 0.5vmax;
+  color: tomato;
+  font-size: 1vmax;
+}
+.productCard:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+  transform: translateY(-1vmax);
+}
+
+.btnMoreProduct {
+  display: block;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s;
+  background-color: tomato;
+  font: 500 1vmax;
+  border-radius: 20px;
+  padding: 1vmax 2vmax;
+  margin: 1vmax auto;
+  outline: none;
+}
+.btnMoreProduct:hover {
+  background-color: rgb(214, 84, 61);
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  .produtCard p {
+    font-size: 1.7vmax;
+  }
+  .produtCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+  .produtCard > span {
+    font-size: 1.5vmax;
+  }
+
+  .produtCard > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Roboto";
+  }
+}
