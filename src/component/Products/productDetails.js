@@ -27,7 +27,7 @@ const ProductDetails = () => {
     color: "rgba(20, 20, 20, 0.1)",
     activeColor: "tomato",
     size: window.innerWidth < 600 ? 20 : 25,
-    value: product.rating.rate,
+    value: product?.rating?.rate || 0,
     isHalf: true,
   };
 
@@ -83,7 +83,6 @@ const ProductDetails = () => {
           <button className="submitReview">Submit Review</button>
         </div>
       </div>
-      <h3 className="reviewsHeading">REVIEWS</h3>
     </Fragment>
   );
 };
