@@ -30,8 +30,8 @@ function Home() {
               <div className="title-section col-lg-5">
                 <h1>Your Amaizing Products...</h1>
                 <p>
-                  Welcome to the <span>TradeE.</span>platform, whwere you get
-                  your all desired products and do easy your life
+                  Welcome to the <span>MyTask</span>platform, where you get your
+                  all desired products and do easy your life
                 </p>
                 <button className="btn btn-primary">Shop Now</button>
               </div>
