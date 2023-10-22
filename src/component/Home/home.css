@@ -1,0 +1,132 @@
+.HeroSection {
+  background-color: #3b5d50;
+}
+.hero {
+  background-image: url("../../images//dots-light.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 100% 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+
+.title-section > h1 {
+  font-weight: 700;
+  color: white;
+  margin-bottom: 32px;
+}
+.title-section > p {
+  color: rgba(255, 255, 255, 0.425);
+  margin-bottom: 25px;
+}
+.title-section > button {
+  background-color: #f9bf29;
+  border-color: #f9bf29;
+  padding: 15px 35px;
+  border-radius: 30px;
+  color: rgba(0, 0, 0, 0.548);
+  font-weight: 600;
+  --bs-btn-active-bg: #e0a204;
+  --bs-btn-active-color: black;
+  --bs-btn-active-border-color: #e0a204;
+}
+.title-section > button:hover {
+  background: #f8b810;
+  border-color: #f8b810;
+
+  color: rgba(0, 0, 0, 0.979);
+}
+
+.carousel-section {
+  position: relative;
+}
+.carousel-section > Carousel {
+  left: 0px;
+  top: -80px;
+  right: -100px;
+  background-color: black;
+}
+.product-section {
+  display: flex;
+  margin: 2vmax auto;
+  width: 90vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.productCard {
+  width: 18vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 1vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax;
+}
+.productCard > img {
+  width: 17vmax;
+}
+.productCard > div {
+  margin: 0vmax 0vmax 0vmax 0vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.productCard > div > span {
+  margin: 0.5vmax;
+  font: 300 0.7vmax "Roboto";
+}
+.productCard > p {
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+}
+.productCard > span {
+  margin: 0.5vmax 0.5vmax;
+  color: tomato;
+  font-size: 1vmax;
+}
+.productCard:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+  transform: translateY(-1vmax);
+}
+
+.btnMoreProduct {
+  display: block;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s;
+  background-color: tomato;
+  font: 500 1vmax;
+  border-radius: 20px;
+  padding: 1vmax 2vmax;
+  margin: 1vmax auto;
+  outline: none;
+}
+.btnMoreProduct:hover {
+  background-color: rgb(214, 84, 61);
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  .produtCard p {
+    font-size: 1.7vmax;
+  }
+  .produtCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+  .produtCard > span {
+    font-size: 1.5vmax;
+  }
+
+  .produtCard > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Roboto";
+  }
+}
